@@ -1,0 +1,13 @@
+.#*
+*~
+apps/face/priv/static/nitrogen
+Mnesia*
+.applist
+erl_crash.dump
+*/ebin/*.beam
+deps
+apps/**/ebin/**
+rels/web/devbox
+index.js
+protocol.js
+.rebar
