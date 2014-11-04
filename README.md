@@ -20,3 +20,16 @@ Get dependencies
 ``` bash
 $ ./mad get-deps
 ```
+
+
+
+Start New Application
+---------------------
+
+* go to apps directory
+* create a new folder my_app
+* type 'rebar create-app appid=my_app'
+* edit the rebar.conf file in the apps folder, and add you application on the
+  'sub_dirs' key, e.g. {sub_dirs, [my_app]} 
+
+

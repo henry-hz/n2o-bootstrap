@@ -1,0 +1,9 @@
+{application, web,
+ [
+  {description, "KKN Web Site"},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [kernel, stdlib]},
+  {mod, { web_app, []}},
+  {env, []}
+ ]}.
