@@ -23,25 +23,19 @@ the mad executable in your path.
 export PATH=$PATH:/usr/local/erlang/mad
 ```
 
-Directory Structure
--------------------
-
-Directory 'deps' for the dependencies, and 'apps' for your group 
-of applications. 
-
-> Note that 'deps' is created automatically and 
-> is ignored by .gitignore, so git will only track your code, not 
-> dependencies. 
-
-
-
 Get dependencies 
 ----------------
 
 ``` bash
-$ ./mad get-deps
+$ mad get-deps
 ```
 
+Compile
+-------
+
+``` bash
+$ mad compile
+```
 
 Run in Development Mode
 ---------------------
@@ -54,6 +48,24 @@ mad repl
 I suggest you to use tmux and have this command line as a right window 
 so now, you can go to src, edit and save using a good editor like vim, 
 sublime, save and follow-up the dynamic compilation.
+
+
+
+Directory Structure
+===================
+
+
+Directory 'deps' for the dependencies, and 'apps' for your group 
+of applications. 
+
+> Note that 'deps' is created automatically and 
+> is ignored by .gitignore, so git will only track your code, not 
+> dependencies. 
+
+
+
+
+
 
 
 Application Layers
