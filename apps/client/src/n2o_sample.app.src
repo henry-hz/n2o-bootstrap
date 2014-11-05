@@ -1,6 +1,6 @@
-{application, n2o_sample,
+{application, client,
  [
-  {description, "N2O VXZ Sample App"},
+  {description, "Client Layer"},
   {vsn, "1"},
   {registered, []},
   {applications, [kernel, stdlib, n2o]},

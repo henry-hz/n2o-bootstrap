@@ -4,7 +4,7 @@
 
 peer()    -> io_lib:format("~p",[wf:peer(?REQ)]).
 message() -> wf:js_escape(wf:html_encode(wf:q(message))).
-main()    -> #dtl{file="index",app=n2o_sample,bindings=[{body,body()}]}.
+main()    -> #dtl{file="index",app=client,bindings=[{body,body()}]}.
 body() ->
     {ok,Pid} = wf:comet(fun() -> chat_loop() end), 
     [ #panel{id=history}, #textbox{id=message},
