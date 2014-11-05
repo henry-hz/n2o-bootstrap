@@ -27,7 +27,7 @@ Get dependencies
 ----------------
 
 ``` bash
-$ mad get-deps
+$ mad deps
 ```
 
 Compile
@@ -35,6 +35,17 @@ Compile
 
 ``` bash
 $ mad compile
+```
+
+Order Apps
+----------
+
+As you may know you can create OTP releases with reltool (rebar generate) or 
+systools (relx). mad currently creates releases with relx but is going to do 
+it independently soon. Now it can only order applications.
+
+``` bash
+$ mad plan
 ```
 
 Run in Development Mode
@@ -49,6 +60,12 @@ I suggest you to use tmux and have this command line as a right window
 so now, you can go to src, edit and save using a good editor like vim, 
 sublime, save and follow-up the dynamic compilation.
 
+Create new Release
+------------------
+
+``` bash
+mad rel
+```
 
 
 Directory Structure
@@ -60,8 +77,7 @@ of applications.
 
 > Note that 'deps' is created automatically and 
 > is ignored by .gitignore, so git will only track your code, not 
-> dependencies. 
-
+> dependencies. Notice that .gitignore is also on sub-directories 
 
 
 
